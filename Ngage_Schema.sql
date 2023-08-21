@@ -34,7 +34,7 @@ CREATE TABLE "cancelled_games" (
 	"notes"	VARCHAR(100),
 	PRIMARY KEY("" AUTOINCREMENT),
        FOREIGN KEY("Genreid") REFERENCES "genres"("Genreid")
-       FOREIGN KEY("Devid") REFERENCES "Devids"("Devid")
+       FOREIGN KEY("Devid") REFERENCES "developers"("Devid")
        FOREIGN KEY("Pubid") REFERENCES "publishers"("Pubid")
 );
 
@@ -48,6 +48,6 @@ CREATE TABLE "released_games" (
 	"release_date_pal"	DATE,
 	PRIMARY KEY("" AUTOINCREMENT),
        FOREIGN KEY("Genreid") REFERENCES "genres"("Genreid")
-       FOREIGN KEY("Devid") REFERENCES "Devids"("Devid")
+       FOREIGN KEY("Devid") REFERENCES "developers"("Devid")
        FOREIGN KEY("Pubid") REFERENCES "publishers"("Pubid")
 );
