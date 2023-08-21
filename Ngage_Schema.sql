@@ -25,7 +25,7 @@ CREATE TABLE "publishers" (
 );
 
 CREATE TABLE "cancelled_games" (
-	""	INTEGER,
+	"Game_Num"	INTEGER,
 	"Title"	VARCHAR(100),
 	"Genreid"	INT,
 	"Devid"	INT,
@@ -39,7 +39,7 @@ CREATE TABLE "cancelled_games" (
 );
 
 CREATE TABLE "released_games" (
-       ""	INTEGER,
+        "Game_Num"	INTEGER,
 	"Title"	INT NOT NULL,
 	"Genreid"	INT NOT NULL,
 	"Devid"	INT NOT NULL,
