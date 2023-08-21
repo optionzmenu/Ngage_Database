@@ -8,7 +8,7 @@ CREATE TABLE "ngage_models" (
 
 CREATE TABLE "genres" (
 	"Genreid"     INTEGER NOT NULL,
-       "name"        NVARCHAR(120),
+        "name"        NVARCHAR(120),
 	PRIMARY KEY("genreid" AUTOINCREMENT)
 );
 
